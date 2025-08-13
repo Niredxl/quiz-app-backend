@@ -11,6 +11,8 @@ const corsOptions = {
 };
 const PORT = process.env.PORT || 5001;
 
+app.use(express.static('public'));
+
 // Middleware
 app.use(cors(corsOptions));
 app.use(express.json());
