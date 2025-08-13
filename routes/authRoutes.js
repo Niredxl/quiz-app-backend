@@ -9,6 +9,7 @@ const router = express.Router();
 // --- 1. REGISTRATION ENDPOINT ---
 // URL: POST /api/auth/register
 router.post('/register', async (req, res) => {
+  console.log("Received registration request with body:", req.body);
   try {
     const { email, password } = req.body;
 
