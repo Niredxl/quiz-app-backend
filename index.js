@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const app = express();
 const corsOptions = {
-  origin: 'https://pyrite-quiz-frontend.onrender.com',
+  origin: 'https://quizera-vgki.onrender.com',
   optionsSuccessStatus: 200
 };
 const PORT = process.env.PORT || 5001;
